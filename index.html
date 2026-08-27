@@ -1,85 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Site de apresentação do filme The Batman, com trailer, elenco, fotos e informações.">
+    <title>The Batman | Lucas Lima</title>
     <link rel="stylesheet" href="styles.css"/>
 </head>
 
 <body>
     <header>
-        <img id="logo" src="./batman-logo-4.jpg" />
-        <nav>
+        <a href="./index.html" aria-label="Página inicial The Batman">
+            <img id="logo" src="./batman-logo-4.jpg" alt="Logo do Batman" />
+        </a>
+        <nav aria-label="Navegação principal">
             <ul>
-                <a href="./index.html">
-                    <li>Home</li>
-                </a>
-                <a href="./contato.html">
-                    <li>Contato</li>
-                </a>
-            </a>
-            <a href="./fotos.html">
-                <li>Fotos</li>
-            </a>
-                <a href="./comentarios.html">
-                    <li>Comentários</li>
-                </a>
-
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./fotos.html">Fotos</a></li>
+                <li><a href="./comentarios.html">Comentários</a></li>
             </ul>
-        </nav> 
+        </nav>
     </header>
 
-    <div id="banner"></div>
-    <div id="trailer-container">
-        <div class="content">
-            <video controls class="trailer">
-                <source src="./The.Batman-Trailer.Principal.mp4" type="video/mp4">
-                Seu navegador não possuí suporte para vídeos
-            </video>
-            <div id="sinopse">
-                <p class="description">
-                    Dois anos de perseguição nas ruas fizeram o Batman causar medo no coração dos criminosos,
-                    e levaram Bruce Wayne para as profundezas de Gotham City.
-                </p>
-                <button class="button">Comprar ingresso</button>
-            </div>
-        </div>
-    </div>
+    <main>
+        <section id="banner" aria-label="Banner de The Batman"></section>
 
-    <div class="actor-cards-container">
-        <div class="cards-content">
-            <div class="card banner-1">Robert Pattison - Batman</div>
-            <div class="card banner-2">Zoe Kravitz - Mulher gato</div>
-            <div class="card banner-3">Jeffrey Wrigth - Gordon</div>
-        </div>
-    </div>
+        <section id="trailer-container" aria-labelledby="trailer-title">
+            <div class="content">
+                <h1 id="trailer-title" class="sr-only">Trailer e sinopse de The Batman</h1>
+                <video controls class="trailer" preload="metadata">
+                    <source src="./The.Batman-Trailer.Principal.mp4" type="video/mp4">
+                    Seu navegador não possui suporte para vídeos.
+                </video>
+                <div id="sinopse">
+                    <p class="description">
+                        Dois anos de perseguição nas ruas fizeram o Batman causar medo no coração dos criminosos,
+                        e levaram Bruce Wayne para as profundezas de Gotham City.
+                    </p>
+                    <a class="button" href="./contato.html">Comprar ingresso</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="actor-cards-container" aria-labelledby="cast-title">
+            <h2 id="cast-title" class="sr-only">Elenco principal</h2>
+            <div class="cards-content">
+                <article class="card banner-1">Robert Pattinson - Batman</article>
+                <article class="card banner-2">Zoë Kravitz - Mulher-Gato</article>
+                <article class="card banner-3">Jeffrey Wright - Gordon</article>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <img style="object-fit: contain;" id="logo" src="./batman-logo-4.jpg">
-        <span>Todosos direitos reservados ©</span>
-        <span>Desenvolvido por:Lucas Lima</span>
+        <img class="footer-logo" src="./batman-logo-4.jpg" alt="Logo do Batman">
+        <p>Todos os direitos reservados ©</p>
+        <p>Desenvolvido por: Lucas Lima</p>
 
-        <nav class="footer-navigation">
+        <nav class="footer-navigation" aria-label="Navegação do rodapé">
             <ul class="footer-list">
-                <a href="./index.html">
-                    <li>Home</li>
-                </a>
-                <a href="./contato.html">
-                    <li>Contato</li>
-                </a>
-            </a>
-            <a href="./fotos.html">
-                <li>Fotos</li>
-            </a>
-                <a href="./comentarios.html">
-                    <li>Comentários</li>
-                </a>
-
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./fotos.html">Fotos</a></li>
+                <li><a href="./comentarios.html">Comentários</a></li>
             </ul>
-        </nav> 
+        </nav>
     </footer>
-    
 </body>
 </html>
