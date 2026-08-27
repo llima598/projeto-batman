@@ -3,38 +3,51 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: black;
-    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+a {
+    color: inherit;
     text-decoration: none;
 }
+
+ul {
+    list-style: none;
+}
+
 header {
-    height: 90px;
+    min-height: 90px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 30px;
 }
 
 nav {
     width: 60%;
 }
 
-ul {
+nav ul {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-li {
-    list-style: none;
+nav a {
     color: aliceblue;
     cursor: pointer;
     font-size: 19px;
-    transition: .5s;
-    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: color .5s;
 }
 
-
-li:hover {
+nav a:hover,
+nav a:focus-visible {
     color: #d21617;
 }
 
@@ -53,7 +66,7 @@ li:hover {
 
 #trailer-container {
     width: 100%;
-    height: 400px;
+    min-height: 400px;
     display: flex;
     justify-content: center;
 }
@@ -63,6 +76,7 @@ li:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .trailer {
@@ -73,20 +87,20 @@ li:hover {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     margin-left: 30px;
 }
 
 .description {
     color: #fff;
     font-size: 19px;
-    font-family: 'Kdam Thmor Pro', sans-serif;
     width: 70%;
+    line-height: 1.6;
 }
 
 .button {
     width: 200px;
-    height: 60px;
+    min-height: 60px;
     background-color: #d21617;
     color: #fff;
     padding: 8px 10px;
@@ -99,11 +113,11 @@ li:hover {
     align-items: center;
     font-weight: bold;
     border: none;
-    outline: none;
     margin-top: 25px;
 }
 
-.button:hover {
+.button:hover,
+.button:focus-visible {
     background-color: #fff;
     color: #000;
 }
@@ -129,20 +143,13 @@ li:hover {
     background-size: cover;
     background-position: 50% 50%;
     border-radius: 5px;
-    cursor: pointer;
-    transition: 1s;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 0 0 20px 10px;
     color: #fff;
     font-size: 17px;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-
-}
-
-.card:hover {
-    transform: scale(1.02);
+    text-shadow: 0 2px 4px #000;
 }
 
 .banner-1 {
@@ -158,18 +165,19 @@ li:hover {
 }
 
 footer {
-    height: 300px;
+    min-height: 300px;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
+    gap: 20px;
+    padding: 30px 20px;
 }
 
-span {
-    color: #fff;
-    font-family: 'Kdam Thmor Pro', sans-serif;    
+.footer-logo {
+    width: 150px;
+    height: auto;
 }
 
 .footer-navigation {
@@ -180,14 +188,27 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
 }
 
-@media(max-width: 768px){
-    .footer-navigation {
-        display: block;
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
     }
 
-    nav {
+    header nav {
         display: none;
     }
 
@@ -196,27 +217,20 @@ span {
     }
 
     #trailer-container {
-        width: 100%;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
+        min-height: auto;
+        padding: 30px 0;
     }
 
     .content {
         width: 95%;
-        display: flex;
         flex-direction: column;
+        gap: 25px;
     }
 
-    .trailer {
-        width: 100%;
-    }
-
+    .trailer,
     #sinopse {
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        width: 100%;
+        margin-left: 0;
     }
 
     .description {
@@ -230,6 +244,15 @@ span {
 
     .cards-content {
         grid-template-columns: 1fr;
-        margin-top: 150px;
+        margin-top: 80px;
+    }
+
+    .card {
+        height: 500px;
+    }
+
+    .footer-navigation {
+        display: block;
+        width: 100%;
     }
 }
