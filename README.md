@@ -1,30 +1,45 @@
 # 🦇 Projeto Batman
 
-Landing page inspirada no universo do Batman, desenvolvida para praticar **HTML, CSS e JavaScript** e aprimorar conhecimentos de construção de interfaces responsivas.
+Landing page inspirada no universo de **The Batman**, desenvolvida para praticar **HTML5, CSS3 e JavaScript**, com foco em estrutura semântica, responsividade, acessibilidade e construção de interfaces.
 
 ## 🚀 Demo
 
-🔗 **[Acessar o projeto](#)**
-
-> Substitua o link acima pelo endereço do deploy quando publicar o projeto.
+🔗 **[Acessar o projeto](https://projeto-batman-eight.vercel.app)**
 
 ## 📸 Preview
 
 Adicione aqui uma captura de tela do projeto em funcionamento.
 
-## ✨ Objetivos do projeto
+## ✨ Funcionalidades
 
-- Praticar estruturação semântica com HTML5
-- Criar uma interface visual utilizando CSS3
-- Trabalhar responsividade para diferentes tamanhos de tela
-- Utilizar JavaScript para interações da página
-- Organizar um projeto Front-end utilizando HTML, CSS e JavaScript
+- Página inicial com banner e informações do filme
+- Trailer integrado com controles de reprodução
+- Apresentação do elenco principal
+- Navegação entre Home, Contato, Fotos e Comentários
+- Página de contato para interação com o projeto
+- Layout responsivo para diferentes tamanhos de tela
+- Estrutura semântica com HTML5
+- Recursos básicos de acessibilidade
 
 ## 🛠️ Tecnologias
 
-- HTML5
-- CSS3
-- JavaScript
+- **HTML5** — estrutura semântica
+- **CSS3** — estilização, layout e responsividade
+- **JavaScript** — interações da aplicação
+- **Google Fonts** — tipografia
+- **Vercel** — deploy e hospedagem
+
+## 🧠 O que pratiquei
+
+- Estruturação semântica de páginas
+- Organização de layouts com CSS
+- Flexbox e CSS Grid
+- Responsividade com media queries
+- Estados de `hover` e `focus`
+- Acessibilidade básica com atributos semânticos e ARIA
+- Integração de conteúdo multimídia
+- Organização de um projeto Front-end
+- Deploy de uma aplicação estática na Vercel
 
 ## 💻 Como executar localmente
 
@@ -35,9 +50,12 @@ cd projeto-batman
 
 Depois, abra o arquivo `index.html` no navegador. Durante o desenvolvimento, também é possível utilizar a extensão **Live Server** do VS Code.
 
-## 🧠 O que aprendi
+## 🔮 Próximas melhorias
 
-O projeto foi desenvolvido como prática de Front-end, com foco em estrutura de páginas, estilização, responsividade e interações com JavaScript.
+- [ ] Adicionar busca ou filtro de conteúdo
+- [ ] Melhorar a navegação mobile
+- [ ] Adicionar validação e feedback ao formulário de contato
+- [ ] Adicionar testes automatizados
 
 ## 👤 Autor
 
@@ -48,4 +66,4 @@ O projeto foi desenvolvido como prática de Front-end, com foco em estrutura de 
 
 ---
 
-Projeto desenvolvido como parte dos meus estudos em desenvolvimento Front-end.
+Projeto desenvolvido como parte dos meus estudos e preparação para uma oportunidade profissional como **Desenvolvedor Front-end Júnior**.
