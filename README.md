@@ -8,7 +8,7 @@ Landing page inspirada no universo de **The Batman**, desenvolvida para praticar
 
 ## 📸 Preview
 
-Adicione aqui uma captura de tela do projeto em funcionamento.
+<img width="1366" height="608" alt="Captura de tela 2026-09-01 151528" src="https://github.com/user-attachments/assets/7d521be7-f94d-45f4-a162-46bd6807be84" />
 
 ## ✨ Funcionalidades
 
